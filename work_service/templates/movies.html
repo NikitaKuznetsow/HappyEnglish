@@ -1,0 +1,20 @@
+
+
+
+<!--{% for elem in context %}-->
+<!--<video width="400" height="300" controls="controls">-->
+<!--   <source src="{{elem.link}}" type='video/mp4'>-->
+<!--</video>-->
+<!--{% endfor %}-->
+
+
+{% for elem in context %}
+<div class="container">
+    <video id="video" width="400" height="300" onclick="this.play()">
+        <source src="{{elem.link}}" type="video/mp4" />
+    </video>
+    <div class="overlay">
+        <p>{{elem.caption}}</p>
+    </div>
+</div>
+{% endfor %}
