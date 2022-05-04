@@ -4,7 +4,6 @@ from flask import request
 from flask import render_template, flash, redirect, url_for
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'st02300dfdsfdsfdsfeadasdeadafdasfesdfeadas'
 
 
 
